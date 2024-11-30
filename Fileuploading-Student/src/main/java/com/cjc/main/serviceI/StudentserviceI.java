@@ -8,4 +8,8 @@ public interface StudentserviceI {
 
 	public Student11 onsavestudentdata(String stu, MultipartFile sImage, MultipartFile sSign, MultipartFile sIdcard);
 
+	public Iterable<Student11> getallstudentdata();
+
+	public Student11 getsinglestudentdata(int id);
+
 }

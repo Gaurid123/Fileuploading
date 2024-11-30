@@ -50,4 +50,16 @@ public class StudentserviceIMPL implements StudentserviceI
 		return stdata;
 	}
 
+	@Override
+	public Iterable<Student11> getallstudentdata() {
+		// TODO Auto-generated method stub
+		return sr.findAll();
+	}
+
+	@Override
+	public Student11 getsinglestudentdata(int id) {
+		// TODO Auto-generated method stub
+		return sr.findById(id).get();
+	}
+
 }
